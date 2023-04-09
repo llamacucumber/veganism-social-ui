@@ -34,6 +34,7 @@
   --color-red-75: #f91880bf;
   --color-yellow: #ffac33;
   --color-light-shade: #ffffff05;
+  --color-lighter-shade: #ffffff07;
   --color-focusable-toot: #ffffff09;
   --color-light-text: #f7f9f9;
   --color-mud: var(--color-brand-mastodon-mud);
@@ -164,6 +165,7 @@ body.theme-mastodon-light.layout-single-column {
   --color-red: #e0245e;
   --color-red-75: #e0245ebf;
   --color-light-shade: #00000005;
+  --color-lighter-shade: #00000007;
   --color-focusable-toot: rgba(0, 0, 0, 0.035);
   --color-light-text: #1f1b23;
   --color-mud: #e5e1ed;
@@ -4037,3 +4039,17 @@ body.embed .entry .detailed-status {
  * Star animation micro-interactions end
  * -------------------------------------
  */
+
+/* Add background color for the compose form */
+/* stylelint-disable-next-line no-duplicate-selectors */
+.layout-single-column .compose-form .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form .compose-form__buttons-wrapper {
+  background-color: var(--color-lighter-shade);
+  border-color: var(--color-lighter-shade);
+  padding-top: 0 !important;
+}
+
+/* Fixes to bottom row when there's a background */
+.layout-single-column .compose-form .compose-form__buttons-wrapper {
+  padding-bottom: calc(var(--gap-default) / 2) !important;
+}
