@@ -1,6 +1,14 @@
-### 1.4.8rc1: 2023-04-14
+### 1.4.9rc4: 2023-04-22
 
-* Fix admin sign up notification glitch, Fixes #19 (thanks @llamacucumbe!)
+* Fix content warning alignment, should be baseline instead of top
+* Add gap between the cw title and show-button
+* Increase contrast of show button
+* Fix cw button color in notifications
+
+### 1.4.8: 2023-04-22
+
+* Fix admin sign up notification glitch, Fixes #19 (thanks @llamacucumber!)
+* Change some leftover shaded colors to more Mastodon deep purple variant rather than Twitter blue
 
 ### 1.4.7: 2023-04-09
 

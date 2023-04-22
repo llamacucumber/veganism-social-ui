@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.8rc1 */
+   1.4.9rc4 */
 
 /* CSS variables */
 :root {
@@ -38,14 +38,15 @@
   --color-focusable-toot: #ffffff09;
   --color-light-text: #f7f9f9;
   --color-mud: var(--color-brand-mastodon-mud);
-  --color-black-coral: #536471;
-  --color-profile-button-hover: #eff3f41a;
-  --color-column-link-hover: #f7f9f91a;
+  --color-black-coral: #5a5371;
+  --color-profile-button-hover: #f1eff41a;
+  --color-column-link-hover: #f7f7f91a;
   --color-modal-overlay: #5b708366;
   --color-dark: var(--color-brand-mastodon-dark);
   --color-thread-line: var(--color-brand-mastodon-threaded-line);
-  --color-gainsboro: #d9e1e8;
+  --color-gainsboro: #dcd9e8;
   --color-light-purple: #9baec8;
+  --color-lighter-purple: #a5b8d3;
   --color-dark-electric-blue: #576078;
   --color-button-text: #f7f9f9;
   --color-ghost-button-text: var(--color-button-text);
@@ -842,15 +843,35 @@ body.embed .status__content a,
 /* CW button */
 .layout-single-column .reply-indicator__content .status__content__spoiler-link,
 .layout-single-column .status__content__spoiler-link {
-  background-color: var(--color-mud);
-  color: var(--color-dim);
+  background-color: var(--color-dark);
+  color: var(--color-light-purple);
   font-weight: 500;
+
+  /* Need to override forced styles */
+  /* stylelint-disable-next-line */
+  margin-left: calc(var(--gap-default) / 2) !important;
+  vertical-align: baseline;
 }
 
 .layout-single-column .reply-indicator__content .status__content__spoiler-link:focus,
 .layout-single-column .reply-indicator__content .status__content__spoiler-link:hover,
 .layout-single-column .status__content .status__content__spoiler-link:focus,
 .layout-single-column .status__content .status__content__spoiler-link:hover {
+  background-color: var(--color-dark);
+  color: var(--color-lighter-purple);
+}
+
+/* CW button in notifications */
+.layout-single-column .notification .reply-indicator__content .status__content__spoiler-link,
+.layout-single-column .notification .status__content__spoiler-link {
+  background-color: var(--color-dark);
+  color: var(--color-dim);
+}
+
+.layout-single-column .notification .reply-indicator__content .status__content__spoiler-link:focus,
+.layout-single-column .notification .reply-indicator__content .status__content__spoiler-link:hover,
+.layout-single-column .notification .status__content .status__content__spoiler-link:focus,
+.layout-single-column .notification .status__content .status__content__spoiler-link:hover {
   background-color: var(--color-dark);
   color: var(--color-dim);
 }
