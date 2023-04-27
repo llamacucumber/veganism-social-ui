@@ -1,9 +1,21 @@
-### 1.4.9rc4: 2023-04-22
+### 1.5.1rc1: 2023-04-27
+
+* Fix server information links not visible after logging in, Fixes #22 (thanks @fofwisdom!)
+
+### 1.5.0: 2023-04-26
+
+* Fix regression with the threaded border color
+
+### 1.4.9: 2023-04-26
 
 * Fix content warning alignment, should be baseline instead of top
 * Add gap between the cw title and show-button
 * Increase contrast of show button
 * Fix cw button color in notifications
+* Fix hover size of the bookmark icon when in detailed status
+* Fix detailed status bar bookmark icon color on hover
+* Add account header handle to color light purple scope
+* Fix follow button color being different than the rest
 
 ### 1.4.8: 2023-04-22
 
