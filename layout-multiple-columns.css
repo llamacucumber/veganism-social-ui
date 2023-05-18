@@ -4124,3 +4124,17 @@ body.embed .entry .detailed-status {
  * Star animation micro-interactions end
  * -------------------------------------
  */
+
+/* Add background color for the compose form */
+/* stylelint-disable-next-line no-duplicate-selectors */
+.layout-single-column .compose-form .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form .compose-form__buttons-wrapper {
+  background-color: var(--color-lighter-shade);
+  border-color: var(--color-lighter-shade);
+  padding-top: 0 !important;
+}
+
+/* Fixes to bottom row when there's a background */
+.layout-single-column .compose-form .compose-form__buttons-wrapper {
+  padding-bottom: calc(var(--gap-default) / 2) !important;
+}
