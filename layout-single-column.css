@@ -4091,3 +4091,16 @@ body.embed .entry .detailed-status {
 .layout-single-column .compose-form .compose-form__buttons-wrapper {
   padding-bottom: calc(var(--gap-default) / 2) !important;
 }
+
+/* Fixes messed up notifications when followers is displayed for account */ 
+.layout-single-column .notification .account__details {
+  display: none;
+}
+
+/* fixes padding for threadded replies after Mastodon 4.1.2 */
+.layout-single-column .status--in-thread .status__action-bar,
+.layout-single-column .status--in-thread .attachment-list,
+.layout-single-column .status--in-thread .status__content__read-more-button,
+.layout-single-column .status--in-thread .status__content {
+  padding-left: 4px;
+}
