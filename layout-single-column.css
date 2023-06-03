@@ -2212,7 +2212,7 @@ body.embed .button.logo-button:hover,
 .layout-single-column .compose-panel .compose-form,
 .layout-single-column .compose-panel,
 .layout-single-column .compose-form__autosuggest-wrapper {
-  overflow: visible;
+  /* overflow: visible; */ /* Causing problems post 4.1.2 */
 }
 
 /* Compose form and reply indicator box, see https://mastodo.fi/@rmattila74/110140863513856240 */
