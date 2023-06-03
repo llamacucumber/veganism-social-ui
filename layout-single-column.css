@@ -4109,6 +4109,6 @@ body.embed .entry .detailed-status {
   display: none;
 }
 
-.ui__header__logo {
+.layout-single-column .ui__header__logo {
   background-image: none;
 }
