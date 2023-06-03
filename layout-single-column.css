@@ -2212,7 +2212,7 @@ body.embed .button.logo-button:hover,
 .layout-single-column .compose-panel .compose-form,
 .layout-single-column .compose-panel,
 .layout-single-column .compose-form__autosuggest-wrapper {
-  /* overflow: visible; */ /* Causing problems post 4.1.2 */
+  /* overflow: visible; */ /* broke in 4.1.2 */
 }
 
 /* Compose form and reply indicator box, see https://mastodo.fi/@rmattila74/110140863513856240 */
@@ -2220,7 +2220,7 @@ body.embed .button.logo-button:hover,
   .layout-single-column .compose-form .autosuggest-textarea__textarea {
     /* stylelint-disable-next-line */
     max-height: 20vh !important;  /* stylelint-disable-next-line */
-    overflow-y: auto !important;
+    /* overflow-y: auto !important; */ /* broke in 4.1.2 */
     resize: none;
   }
 }
@@ -4103,4 +4103,12 @@ body.embed .entry .detailed-status {
 .layout-single-column .status--in-thread .status__content__read-more-button,
 .layout-single-column .status--in-thread .status__content {
   padding-left: 4px;
+}
+
+.navigation-panel__logo {
+  display: none;
+}
+
+.ui__header__logo {
+  background-image: none;
 }
